@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Currency Converter</h1>
+    
+    <form id="converter-form">
+      <input type="number" id="amount" placeholder="Amount" required>
+      <select id="from-currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="RUB">RUB</option>
+        <option value="RWF">RWF</option>
+        <option value="NRA">NRA</option> 
+        <option value="SHL">SHL</option>
+        <option value="KES">KES</option>
+      </select>
+      <span>to</span>
+      <select id="to-currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="RUB">RUB</option>
+        <option value="RWF">RWF</option>
+        <option value="NRA">NRA</option>
+        <option value="SHL">SHL</option>
+        <option value="KES">KES</option>
+      </select>
+      <button type="submit">Convert</button>
+    </form>
+    <div id="result" class="result"></div>
+  </div>
+
+    <div class="container">
+        <h2>Currency Rates</h2>
+        <p>Here is a list of current exchange rates.</p>
+
+        <div class="currency-list">
+            <ul>
+                <li> USD: 1.0 </li>
+                <li> EUR: 0.89 </li>
+                <li> GBP: 0.75 </li>
+                <li> JPY: 113.5 </li>
+                <li> RUB: 74.36 </li>
+                <li> RWF: 9.86 </li>
+                <li> NRA: 1200 </li>
+                <li> SHL: 2900 </li>
+                <li> KES: 110.5 </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="converter.js"></script>
+</body>
+</html>
